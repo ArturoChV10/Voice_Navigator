@@ -1,0 +1,46 @@
+{
+  "sample_rate": 16000,
+  "clip_samples": 16000,
+  "channels": 1,
+  "pad": "zeros al final / recorte a 1 s",
+  "mel": {
+    "n_fft": 400,
+    "win_length": 400,
+    "hop_length": 160,
+    "n_mels": 64,
+    "f_min": 0.0,
+    "f_max": 8000.0,
+    "power": 2.0,
+    "center": true,
+    "pad_mode": "reflect",
+    "mel_scale": "htk",
+    "norm": null
+  },
+  "to_db": {
+    "formula": "10*log10(max(x, amin))",
+    "amin": 1e-10
+  },
+  "normalization": {
+    "mean": -33.879398345947266,
+    "std": 23.381967544555664
+  },
+  "input_shape": [
+    1,
+    1,
+    64,
+    101
+  ],
+  "labels": [
+    "yes",
+    "no",
+    "up",
+    "down",
+    "left",
+    "right",
+    "on",
+    "off",
+    "stop",
+    "go"
+  ],
+  "output": "logits (aplicar softmax/argmax)"
+}

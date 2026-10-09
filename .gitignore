@@ -1,0 +1,39 @@
+# Android / Gradle
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Android Studio / IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.qodo/
+
+# Configuración local (contiene rutas absolutas tuyas)
+local.properties
+
+# Logs
+*.log
+*.hprof
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.swp
+*.swo
+*~
+
+# Kotlin / Java
+.kotlin/
